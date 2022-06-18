@@ -169,7 +169,7 @@ def get_dog():
  querystring = {"min":"10","max":"20","fragment":"true","json":"true"}
 
  headers = {
-    'x-api-key': "70c009b3-1973-4cf2-b6da-ef982b970e128"
+    'x-api-key': "KEY"
     }
 
  response = requests.request("GET", url, headers=headers, params=querystring)
@@ -187,7 +187,7 @@ def get_cat():
  querystring = {"min":"10","max":"20","fragment":"true","json":"true"}
 
  headers = {
-    'x-api-key': "555ce1b9-f723-4de0-ab0b-b538524e40a2"
+    'x-api-key': "KEY"
     }
 
  response = requests.request("GET", url, headers=headers, params=querystring)
@@ -199,11 +199,11 @@ def get_cat():
  return(cat_url)
 
 reddit = asyncpraw.Reddit(
-  client_id="qoetIpc_tUzwPWKBf0gz8g",
-  client_secret="mzxQbGYLSzlfLmYjApYj-RO3y0jesg",
-  user_agent="lol23",
-  username="awaffle11",
-  password="iamaarav123456"
+  client_id="KEY",
+  client_secret="KEY",
+  user_agent="KEY",
+  username="KEY",
+  password="KEY"
 )
 
 def get_trivia():
@@ -213,7 +213,7 @@ def get_trivia():
 
  headers = {
     'x-rapidapi-host': "numbersapi.p.rapidapi.com",
-    'x-rapidapi-key': "593c91dd0bmsh3e71f88df10ca21p182114jsn0d6247dfdc28"
+    'x-rapidapi-key': "KEY"
     }
 
  response = requests.request("GET", url, headers=headers, params=querystring)
@@ -229,7 +229,7 @@ def get_mean(argument):
 
   headers = {
     'x-rapidapi-host': "mashape-community-urban-dictionary.p.rapidapi.com",
-    'x-rapidapi-key': "593c91dd0bmsh3e71f88df10ca21p182114jsn0d6247dfdc28"
+    'x-rapidapi-key': "KEY"
     }
 
   response = requests.request("GET", url, headers=headers, params=querystring)
@@ -245,7 +245,7 @@ def get_trivia():
 
  headers = {
     'x-rapidapi-host': "numbersapi.p.rapidapi.com",
-    'x-rapidapi-key': "593c91dd0bmsh3e71f88df10ca21p182114jsn0d6247dfdc28"
+    'x-rapidapi-key': "Key"
     }
 
  response = requests.request("GET", url, headers=headers, params=querystring)
@@ -379,8 +379,8 @@ async def define(ctx,term):
 
 @client.command()
 async def weather(ctx,*,city:str):
- api_key = "c360e0c04a85058f67cd0a8d1b344f5e"
- base_url = "http://api.openweathermap.org/data/2.5/weather?"
+ api_key = "KEY"
+ base_url = "URL"
  city_name = city
  complete_url = base_url + "appid=" + api_key + "&q=" + city_name
  response = requests.get(complete_url)
@@ -470,4 +470,4 @@ async def meme(ctx):
 
 
 
-client.run("OTA1NDc4MDUxMDE2NjMwMzcz.YYKqJg.fVBEiIdI8lSQhLhFR8vBgD8hWLI")
+client.run(BOTTOKEN)
